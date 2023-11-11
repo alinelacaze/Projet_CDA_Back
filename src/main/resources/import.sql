@@ -1,0 +1,36 @@
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (1, '2023-09-08', 'Colonie n°1');
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (2, '2023-09-08', 'Colonie n°2');
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (3, '2023-09-08', 'Colonie n°3');
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (4, '2023-09-08', 'Colonie n°4');
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (5, '2023-09-08', 'Colonie n°5');
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (6, '2023-09-08', 'Colonie n°6');
+INSERT INTO `catalogue` (`id`, `date_ajout`, `description`) VALUES (7, '2023-09-08', 'Colonie n°7');
+
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('TERMINE', '2023-04-01', '2023-04-15', 'Fleurs et balades', 'PRINTEMPS', 1, 'http://localhost:8484/api/upload/files/printemps.jpg');
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('ANNULE', '2023-06-01', '2023-06-15', 'Fruits et camping sauvage', 'ETE', 2, null);
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('TERMINE', '2023-10-01', '2023-10-15', 'Cueillette de champignons', 'AUTOMNE', 3, 'http://localhost:8484/api/upload/files/montagnes.jpg');
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('DISPONIBLE', '2024-02-01', '2024-02-15', 'Ski et luge', 'HIVER', 4, null);
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('DISPONIBLE', '2024-04-01', '2024-04-15', 'Faune et flore', 'PRINTEMPS', 5, null);
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('COMPLET', '2024-06-01', '2024-06-15', 'Rafting et escalade', 'ETE', 6, null);
+INSERT INTO `colonie` (`availability`, `date_debut`, `date_fin`, `name`, `theme`, `id`, `url_image`) VALUES ('INDISPONIBLE', '2024-10-01', '2024-10-15', 'Contes et légendes', 'AUTOMNE', 7, null);
+
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (1, 'Myosotis', 'Foshan', 'a', '$2a$12$Dhw4uODU3L3BXGTvql.j7ebKHQgGd4dDQwOAyNeKVOl7e66kdKjEm', 4, 'ADMIN');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (2, 'Oeillet', 'Campinas', 'b', '$2a$12$I2hDhTXNtJnxyFHgvhMXB.HTHTnGMldMRO1kCFU5VfgKir3/ZWKnq', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (3, 'Pivoine', 'Baku', 'c', '$2a$12$i7IKHJp5rlw..OiYA1ZlHOOe8u896GEIw4tyUGf2a0VYJBP18yqpm', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (4, 'Amaranthe', 'Kanpur', 'd', '$2a$12$mBYQY4VG4BUeb0LIrH51zO/VfYPL6IbVaZw6nSVJXy/0PU4IRXSai', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (5, 'Lilas', 'Basra', 'e', '$2a$12$F/NIQI1GA4184oYReJ4ApeJeTIELIaQqJNA75RzEjtv5Wn/YPu1ZG', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (6, 'Tournesol', 'Saitama', 'f', '$2a$12$PSC18n9A56B0KeF/lFGVXe2.puHnukr7DiVRkUnIhV0K9XG2DJVqu', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (7, 'Violette', 'Prague', 'g', '$2a$12$FI.lA/HSv2ZrOC4E3h656eUqZ1jJT3L1r.eKiVjARm3XPCfU/Lb/q', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (8, 'Rose', 'Rio de Janeiro', 'h', '$2a$12$DTK.0ajvWpjW./eyXG6udeh4/.7VEJd9iCT9Pd5g2pEpGWM0DjB1a', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (9, 'Asclépia', 'Lucknow', 'i', '$2a$12$pxGEKir1x5bH4.lQgHgwDeqg9xkK.Wwvhhf1ZiI8Xfm.H0FgUQT3O', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (10, 'Renoncule', 'Yerevan', 'j', '$2a$12$0tcQdObXP26lh0dbw8dVlOvsGes7t7ltdb7dC9yStycvc7shfKcVu', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (11, 'Pois de Senteur', 'Ulsan', 'k', '$2a$12$gtC8tKfdMMTyv7uYroyCZeLiyxJs1jbb5X9sRV.12/Ize2M4.Biqa', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (12, 'Nigelle', 'Semarang', 'l', '$2a$12$Kvjib6nUwl.n3ExAf3CmRe56x5GuzlD/p0g3AumZSOdb0B79rK9Um', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (13, 'Viburnum', 'Osaka', 'm', '$2a$12$0L.m08RgSzfuCZIAu22BJuKyVdTf2DVg/kwpzyIPX4ACwIwZ0Iqae', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (14, 'Clématite', 'Brasília', 'n', '$2a$12$BR1ziRTLRwnkqTUXD/WJQ.lMU3QUWDTjUhRdlZAvsI/Tx8eUEYoKK', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (15, 'Muscari', 'Bulawayo', 'o', '$2a$12$kXl6UrIDCEaLDkyAuZz9Xu.OX6lA8dLtSg5gRD3x8ZKQ6vJj6KL3S', 4, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (16, 'Dahlia', 'Montevideo', 'p', '$2a$12$XlxcaCP0p/XQz9CLTyVTEe9IsW2nhKIN81NsA6gjzkkvh0UUwpqaC', 5, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (17, 'Anémone', 'Minsk', 'q', '$2a$12$AkVPVDMU5IzTfjRFEuagt.8xsjEwoGVZdcJbDU5tdi0HEo/AUHRfm', 5, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (18, 'Lavande', 'Barranquilla', 'r', '$2a$12$4NdtindhN8XXO1..fOme6.PpD3azMI0qpkXZq3FAybU9e9QnPeol.', 5, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (19, 'Mandevilla', 'Phoenix', 's', '$2a$12$Z.UFUySHXMZxsqAKnPQWouGvSiBVCyaU5tqXIH9FJChoMNgfcApaO', 5, 'USER');
+INSERT INTO `personne` (`id`, `firstname`, `lastname`, `login`, `password`, `colonie_id`, role) VALUES (20, 'Glaïeul', 'Monterrey', 't', '$2a$12$8vXSCGYf9GrR4.BLRtciX.ycQGEgPspEurPDWR8VZb6Tw1sAVNpq2', 5, 'USER');
